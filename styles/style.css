@@ -134,10 +134,13 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .testimonials__icon {
     margin: 0 0 53px;
+    width: 80px;
+    height: 80px;
     justify-self: center;
 }
 
