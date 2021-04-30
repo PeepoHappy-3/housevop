@@ -1,0 +1,49 @@
+.main-screen {
+    background-image: url(../../images/mainscreen.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 200px 0 0px;
+}
+
+.main-screen__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.main-screen__icon {
+    width: 23.53px;
+    margin: 0 auto 200px;
+}
+
+.main-screen__header {
+    margin: 0 auto 100px;
+    padding: 0;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 64px;
+    text-align: center;
+    color: #D4C17F;
+    max-width: 556px;
+}
+
+.main-screen__contacts {
+    font-family: Raleway;
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    width: 558px;
+    margin: 0 auto;
+}
+
+.main-screen__adress {}
+
+.main-screen__phone {}
+
+@media screen and (max-width:1135px) {}

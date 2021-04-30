@@ -32,8 +32,10 @@
 
 .header {
     background-image: url('../images/mainscreen.jpg');
+    background-size: cover;
     padding: 30px 0 75px;
     margin: 0;
+    box-sizing: border-box;
 }
 
 .header__top {
@@ -112,8 +114,13 @@
 
 .testimonials {
     background-color: #242B33;
+    background-image: url(../images/II.png);
+    background-repeat: no-repeat;
+    background-position-x: 88%;
+    background-position-y: 70%;
     margin: 0;
     padding: 120px 0 82px;
+    box-sizing: border-box;
 }
 
 .testimonials__bg {
@@ -157,6 +164,10 @@
 
 .appartments {
     background-color: #242B33;
+    background-image: url(../images/III.png);
+    background-repeat: no-repeat;
+    background-position-x: 13%;
+    background-position-y: 17%;
     margin: 0;
 }
 
@@ -195,6 +206,10 @@
 .appartments__link {
     text-decoration: none;
     color: inherit;
+}
+
+.appartments__img {
+    width: 100%;
 }
 
 .appartments__item:hover .appartments__caption {
@@ -296,6 +311,10 @@
 
 .video {
     background-color: #242B33;
+    background-image: url('../images/IV.png');
+    background-position-x: 88%;
+    background-position-y: 33%;
+    background-repeat: no-repeat;
     padding: 0 0 180px;
 }
 
@@ -310,6 +329,10 @@
     position: relative;
     margin: 0 auto;
     max-width: 720px;
+}
+
+.video__cover {
+    width: 100%;
 }
 
 .video__play-btn {
