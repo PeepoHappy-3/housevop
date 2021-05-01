@@ -2,7 +2,8 @@
     background-image: url(../../images/mainscreen.jpg);
     background-size: cover;
     background-position: center;
-    padding: 200px 0 0px;
+    padding: 200px 0 74px;
+    position: relative;
 }
 
 .main-screen__container {
@@ -15,7 +16,8 @@
 }
 
 .main-screen__icon {
-    width: 23.53px;
+    width: 30.53px;
+    object-fit: cover;
     margin: 0 auto 200px;
 }
 
@@ -38,12 +40,59 @@
     text-align: center;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 558px;
     margin: 0 auto;
+    position: relative;
 }
 
-.main-screen__adress {}
+.main-screen__adress {
+    margin: 0;
+    padding: 0;
+}
 
-.main-screen__phone {}
+.main-screen__adress::before {
+    content: '';
+    display: inline-block;
+    background-image: url(../../images/map-point_icon.svg);
+    background-size: contain;
+    background-position: center;
+    width: 21px;
+    height: 21px;
+    margin: 0 15px 0 0;
+    padding: 0;
+}
+
+.main-screen__phone {
+    margin: 0;
+    padding: 0;
+}
+
+.main-screen__phone::before {
+    content: '';
+    display: inline-block;
+    background-image: url(../../images/phone-call_icon.svg);
+    background-size: contain;
+    background-position: center;
+    width: 21px;
+    height: 21px;
+    margin: 0 15px 0 0;
+    padding: 0;
+}
 
 @media screen and (max-width:1135px) {}
+
+@media screen and (max-width:768px) {
+    .main-screen__contacts {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .main-screen__adress {
+        margin-bottom: 12px;
+    }
+    .main-screen {
+        padding: 100px 0 74px;
+    }
+}
